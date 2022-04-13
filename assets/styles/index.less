@@ -1,0 +1,53 @@
+.container {
+  position: relative;
+  margin: 20px;
+  
+  .wraper {
+    display: inline-block;
+    text-align: center;
+
+    p {
+      margin: 0;
+    }
+    .main {
+      width: 300px;
+      height: 300px;
+      position: relative;
+      background-image: url(/assets/image/tb.png);
+      background-size: 100% 100%;
+    }
+    #trackBox {
+      position: absolute;
+      left: 0;
+    }
+    
+    #canvasImg {
+      visibility: hidden;
+    }
+    #videoEl {
+      object-fit: cover;
+      border-radius: 50%;
+      position: relative;
+      z-index: 1;
+    }
+    .bg {
+      width: 400px;
+      height: 520px;
+      background-image: url('/assets/image/bg.png');
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    .identify-area {
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background-color: transparent;
+      border: 2px solid #27c;
+    }
+  }
+}
