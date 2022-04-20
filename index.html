@@ -11,19 +11,23 @@
 <body>
   <div class="container">
     <div class="wraper">
-      <p>人脸识别身份验证</p>
-      <p class="tip-p">【温馨提示：<span class="tip-text">请保持光线充足，并正对摄像头</span>】</p>
-      <div class="main">
-        <video id="videoEl" autoplay muted playsinline webkit-playsinline="true"></video>
-        <canvas id="trackBox"></canvas>
-      </div>
-      <div class="operation">
-        <!-- <button class="js-retry">重新选择</button> -->
-        <button class="js-compare" style="display: none;">开始验证</button>
-        <button class="js-pause">暂停</button>
+      <div class="step-identify">
+        <div class="flex">
+          <p>人脸识别身份验证</p>
+          <p class="tip-p">【温馨提示：<span class="tip-text">请保持光线充足，并正对摄像头</span>】</p>
+          <div class="main">
+            <video id="videoEl" autoplay muted playsinline webkit-playsinline="true"></video>
+            <canvas id="trackBox"></canvas>
+          </div>
+          <div class="operation">
+            <!-- <button class="js-retry">重新选择</button> -->
+            <button class="js-compare" style="display: none;">开始验证</button>
+            <button class="js-pause">暂停</button>
+          </div>
+        </div>
       </div>
     </div> 
-    <canvas id="canvasImg"></canvas>
+    <!-- <canvas id="canvasImg"></canvas> -->
     <!-- <img style="display: none;" id="imgTest" src="./assets/image/mufeng.png" alt=""> -->
   </div>
 <script type="text/javascript" src="main.bundle.js"></script></body>
