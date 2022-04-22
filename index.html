@@ -11,7 +11,50 @@
 <body>
   <div class="container">
     <div class="wraper">
-      <div class="step-identify">
+      <div class="step-content step-info">
+        <p class="info-title">个人基本信息</p>
+        <form>
+          <div class="form-item">
+            <div class="item-label">真实姓名</div>
+            <div class="item-content">
+              <input type="text" id="certName" name="certName" placeholder="请输入真实姓名">
+            </div>
+          </div>
+          <div class="form-item">
+            <div class="item-label">身份证号</div>
+            <div class="item-content">
+              <input type="text" id="certNo" name="certNo" placeholder="请输入本人真实身份证号">
+            </div>
+          </div>
+        </form>
+        <div class="form-btn">
+          <button class="t-button" id="next1">下一步</button>
+        </div>
+      </div>
+      <div class="step-content step-tips" style="display: none;">
+        <div class="tips-nav">
+          <span id="prev1">&lt;</span>
+          <p>人脸验证</p>
+        </div>
+        <p class="p1">为保证您的信息安全</p>
+        <p class="p2">请进行人脸识别认证</p>
+        <div class="tips-content">
+          <div class="content-item">
+            <div>1</div>
+            <div><p>确保本人操作</p><p>非本人操作将无法通过认证</p></div>
+          </div>
+          <div class="content-item">
+            <div>2</div>
+            <div><p>识别光线适中</p><p>请保证光线不要过暗或过亮</p></div>
+          </div>
+          <div class="content-item">
+            <div>3</div>
+            <div><p>正面对准手机</p><p>保持您的脸出现在取景框内</p></div>
+          </div>
+          <button class="t-button" id="next2">开始身份验证</button>
+        </div>
+      </div>
+      <div class="step-content step-identify" style="display: none;">
         <div class="flex">
           <p>人脸识别身份验证</p>
           <p class="tip-p">【温馨提示：<span class="tip-text">请保持光线充足，并正对摄像头</span>】</p>
@@ -26,10 +69,19 @@
           </div>
         </div>
       </div>
+      <div class="step-content step-result" style="display: none;">
+        <div class="tips-nav">
+          <p>验证结果</p>
+        </div>
+        <div class="circle"><div class="ok-icon"></div></div>
+        <p id="respText"></p>
+        <button class="t-button" id="close">关闭</button>
+      </div>
     </div> 
     <!-- <canvas id="canvasImg"></canvas> -->
     <!-- <img style="display: none;" id="imgTest" src="./assets/image/mufeng.png" alt=""> -->
   </div>
-<script type="text/javascript" src="main.bundle.js"></script></body>
+<script type="text/javascript" src="aliyun.bundle.js"></script></body>
 
 </html>
+<script type="text/javascript"src="https://cn-shanghai-aliyun-cloudauth.oss-cn-shanghai.aliyuncs.com/web_sdk_js/jsvm_all.js" ></script>
